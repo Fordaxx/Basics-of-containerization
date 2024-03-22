@@ -1,0 +1,6 @@
+FROM postgres:13.3
+
+LABEL author="Dautov Ruslan"
+LABEL version="1.0"
+
+COPY *.sql /docker-entrypoint-initdb.d/
