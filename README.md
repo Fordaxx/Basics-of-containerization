@@ -21,3 +21,13 @@ docker exec -it db-ubuntu /bin/bash
 psql -h postgres -p 5432 -U test_user test
 ```
 It`s all! You have access to database. 
+
+You can see tables: 
+```
+ \dt
+```
+In the database there is test table movies
+To view the content: 
+```
+SELECT * FROM movies;
+```
